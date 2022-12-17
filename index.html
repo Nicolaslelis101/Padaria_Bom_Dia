@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria Bom Dia</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Padaria Bom Dia</h1>
+    <p>Selecione o período</p>
+    <select name="selecionar" id="sel">
+        <option>27/07/2022</option>
+        <option>28/07/2022</option>
+        <option>29/07/2022</option>
+    </select>
+    <button onclick="confirmar()">Confirmar</button>
+    <section id="hide">
+        <span>Resultado:</span>
+        <div id='res'></div>
+        <span>Bom dia!</span>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
