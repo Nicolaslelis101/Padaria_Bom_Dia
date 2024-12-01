@@ -1,29 +1,78 @@
+:root{
+    --branco: aliceblue;
+    --Marrom: rgb(105, 64, 54);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
 body{
     text-align: center;
-    background-color: rgb(105, 64, 54);
+    background-color: var(--Marrom);
 }
-h1{
-    color: rgb(105, 64, 54);
-    background-color: aliceblue;
+header#cabecalho{
+    background-color: var(--branco);
+    padding: 15px;
+}
+.head{
+    color: var(--Marrom);
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px 10px;
+}
+.head:hover{
+    color: var(--branco);
+    background-color: var(--Marrom);
+    transition-duration: 0.2s;
+
+}
+main{
+    height: 823px;
+    padding: 10px;
+}
+h1#titulo{
+    color: var(--Marrom);
+    background-color: var(--branco);
     font-size: 50px;
     border-radius: 10px;
 }
-p, #res{
-    color: aliceblue;
+h2{
+    color: var(--Marrom);
+    background-color: var(--branco);
+    border-radius: 10px;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+p, #res, ul, .social{
+    color: var(--branco);
+    text-decoration: none;
     font-size: 20px;
 }
 select, button{
-   color: rgb(105, 64, 54);
+   color: var(--Marrom);
    font-size: 15px;
    border-radius: 30px;
 }
 section{
-    background-color: aliceblue;
+    background-color: var(--branco);
     border-radius: 30px;
 }
 #hide{
     display: none;
+    padding: 10px;
 }
 span, #res{
-    color: rgb(105, 64, 54);
+    color: var(--Marrom);
+}
+img{
+    float: left;
+    width: 208px;
+    height: 118px;
+}
+footer{
+    background-color: var(--branco);
+    color: var(--Marrom);
+    font-size: 25px;
+    padding: 15px;
 }

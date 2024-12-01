@@ -1,11 +1,16 @@
 function confirmar(){
     const dados = [
-        {periodo: '2022-07-27', ingrediente_1: '20203,17773', ingrediente_2: '7673,987793', ingrediente_3: '8205,915039', ingrediente_4: '1217,679932', ingrediente_5 : '356,7152405', ingrediente_6: '699,184021',total: '38144'},
-        {periodo: '2022-07-28', ingrediente_1: '21176,67578', ingrediente_2: '8415,883789', ingrediente_3: '8636,681641', ingrediente_4: '1464,556641', ingrediente_5 : '380,3089294', ingrediente_6: '738,3234863', total: '40704'},
-        {periodo: '2022-07-29', ingrediente_1: '24198,91602', ingrediente_2: '10609,25879', ingrediente_3: '9623,415039', ingrediente_4: '2164,867188', ingrediente_5 : '442,8544312', ingrediente_6: '833,1877441', total: '47872'}
+        {periodo: '2023-03-27', ingrediente_1: 'Pão Francês', ingrediente_2: 'Sonho', ingrediente_3: 'Café', ingrediente_4: 'Panqueca', ingrediente_5: 'Maria Mole', ingrediente_6: 'Pão de queijo'},
+        {periodo: '2023-03-28', ingrediente_1: 'Brigadeiro', ingrediente_2: 'Café', ingrediente_3: 'Pão Francês', ingrediente_4: 'Pão de mel', ingrediente_5: 'Pão de queijo', ingrediente_6: 'Cocada'},
+        {periodo: '2023-03-29', ingrediente_1: 'Achocolatado', ingrediente_2: 'Café', ingrediente_3: 'Pão de forma', ingrediente_4: 'Biscoito de Povilho', ingrediente_5: 'Maria Mole', ingrediente_6: 'Cocada'}
     ]
     let selecionar = document.getElementById('sel').value
     selel = selecionar.split('/')
+    let period = []
+    for(let i = 0; i <= 2; i++){
+        period += dados[i].periodo.split('-')
+    }
+    console.log(period)
     let sect = document.getElementById('hide')
     if(sect.style.display === "none"){
         sect.style.display = "block"
@@ -15,25 +20,22 @@ function confirmar(){
             Ingrediente 2: ${dados[0].ingrediente_2} 
             Ingrediente 3: ${dados[0].ingrediente_3} 
             Ingrediente 4: ${dados[0].ingrediente_4}
-            Ingrediente 5: ${dados[0].ingrediente_4} 
-            Ingrediente 6: ${dados[0].ingrediente_6}
-            Total: ${dados[0].total}`
+            Ingrediente 5: ${dados[0].ingrediente_5} 
+            Ingrediente 6: ${dados[0].ingrediente_6}`
         }else if(selel[0] == '28'){
             lugar.innerText = `Ingrediente 1: ${dados[1].ingrediente_1} 
             Ingrediente 2: ${dados[1].ingrediente_2} 
             Ingrediente 3: ${dados[1].ingrediente_3} 
             Ingrediente 4: ${dados[1].ingrediente_4}
-            Ingrediente 5: ${dados[1].ingrediente_4} 
-            Ingrediente 6: ${dados[1].ingrediente_6}
-            Total: ${dados[1].total}`
+            Ingrediente 5: ${dados[1].ingrediente_5} 
+            Ingrediente 6: ${dados[1].ingrediente_6}`
         }else if(selel[0] == '29'){
             lugar.innerText = `Ingrediente 1: ${dados[2].ingrediente_1} 
             Ingrediente 2: ${dados[2].ingrediente_2} 
             Ingrediente 3: ${dados[2].ingrediente_3} 
             Ingrediente 4: ${dados[2].ingrediente_4}
-            Ingrediente 5: ${dados[2].ingrediente_4} 
-            Ingrediente 6: ${dados[2].ingrediente_6}
-            Total: ${dados[2].total}`
+            Ingrediente 5: ${dados[2].ingrediente_5} 
+            Ingrediente 6: ${dados[2].ingrediente_6}`
         }else{
             lugar.innerText = `Não temos nada no cardapio!`
         } 

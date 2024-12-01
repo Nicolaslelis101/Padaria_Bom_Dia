@@ -6,21 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Padaria Bom Dia</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="imagens/Icone.png" type="image/x-icon">
 </head>
 <body>
-    <h1>Padaria Bom Dia</h1>
-    <p>Selecione o período</p>
-    <select name="selecionar" id="sel">
-        <option>27/07/2022</option>
-        <option>28/07/2022</option>
-        <option>29/07/2022</option>
-    </select>
-    <button onclick="confirmar()">Confirmar</button>
-    <section id="hide">
-        <span>Resultado:</span>
-        <div id='res'></div>
-        <span>Bom dia!</span>
-    </section>
+    <header id="cabecalho">
+        <p>
+            <a class="head" href="páginas/cardapio/cardapio.html">Cardapio</a> 
+            <a class="head" href="">Contato</a> 
+            <a class="head" href="">Quem somos?</a>
+        </p>
+    </header>
+    <main>
+        <h1 id="titulo">Padaria Bom Dia</h1>
+        <p>Selecione o período</p>
+        <select name="selecionar" id="sel">
+            <option>27/03/2023</option>
+            <option>28/03/2023</option>
+            <option>29/03/2023</option>
+        </select>
+        <button onclick="confirmar()">Confirmar</button>
+        <section id="hide">
+            <span>Resultado:</span>
+            <div id='res'></div>
+            <span>Bom dia!</span>
+        </section>
+        <h2>Quem somos?</h2>
+        <img src="imagens/Padaria_bom_dia_logo.png" alt="imagem_marca" id="imagem_marca">
+        <p>
+            Somos uma rede de padarias que busca oferecer desde do cafézinho até aquele pão bem fresquinho. Seu café da manhã ou da tarde será feito com aquele carinho que nossos clientes tanto precisam e com variedades, entendemos o que os clientes precisam nesse momento simples porém de muita importância na vida. 
+        </p>
+        <br>
+        <h2>Contato</h2>
+        <p>Para pedidos via WhatsApp chame pelo número: 9999-9999</p>
+        <ul> Nossas redes:
+            <li><a class="social" href="">Facebook</a></li>
+        </ul>
+    </main>
+    <footer>Feito por: Nícolas Lelis</footer>
     <script src="script.js"></script>
 </body>
 </html>
